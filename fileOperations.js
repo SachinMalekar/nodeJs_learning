@@ -18,3 +18,8 @@ fs.open('myNewFileTxt.txt','w', function(err, file){
     if(err) throw err;
     console.log('Saved..!');
 })
+
+fs.writeFileSync('notes.txt','i love my india', function (err, file){
+    if(err) throw err;
+    console.log('file created...')
+});
